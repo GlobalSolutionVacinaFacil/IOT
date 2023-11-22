@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Leonard Karic ",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 83.4, "left": -150.8, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 86.4, "left": -321.56, "attrs": {} },
+    { "type": "chip-pulse-generator", "id": "chip1", "top": 10.62, "left": -177.6, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": -86.1,
+      "left": 33,
+      "attrs": { "temperature": "35.2", "humidity": "55.5" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "chip1:IN", "esp:4", "green", [ "v0" ] ],
+    [ "chip1:PULSE", "esp:4", "green", [ "v-28.8", "h-122.99", "v240" ] ],
+    [ "bb1:bp.3", "bb1:4b.j", "red", [ "v0" ] ],
+    [ "bb1:bp.2", "bb1:3b.j", "red", [ "v0" ] ],
+    [ "chip1:VCC", "bb1:3b.i", "red", [ "v201.6", "h67.2" ] ],
+    [ "chip1:GND", "esp:GND.2", "black", [ "h0" ] ],
+    [ "dht:VCC", "bb1:4b.i", "red", [ "h-96", "v172.8" ] ],
+    [ "bb1:bp.1", "esp:5V", "red", [ "v47.1", "h-200.15" ] ],
+    [ "dht:GND", "esp:GND.1", "black", [ "h134.4", "v326.4", "h-528.15" ] ],
+    [ "dht:SDA", "esp:2", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

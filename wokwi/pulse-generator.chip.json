@@ -1,0 +1,22 @@
+{
+  "name": "pulse-generator",
+  "author": "Leonard Karic ",
+  "pins": [
+    "GND",
+    "VCC",
+    "",
+    "",
+    "",
+    "PULSE"
+  ],
+  "controls": [
+    {
+      "id": "frequency",
+      "label": "Frequency",
+      "type": "range",
+      "min": 0,
+      "max": 220,
+      "step": 128
+    }
+  ]
+}
