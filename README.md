@@ -28,4 +28,9 @@ Agradecemos por explorar o Vacina Fácil. Se tiver alguma dúvida ou sugestão, 
 
 Divirta-se explorando e aprendendo!
 
+### 4. Links
+
+Link YouTube: https://youtu.be/7-7pvX-knz0
+Link GitHub - IA & IOT: https://github.com/GlobalSolutionVacinaFacil/IOT
+
 **Equipe Vacina Fácil**
